@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-myservice",
+  "version": "1.0.3",
+  "description": "cordova plugin myservice for esp8266 and esp32",
+  "author": "coloz",
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-plugin-myservice",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coloz/cordova-plugin-myservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coloz/cordova-plugin-myservice/issues"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "myservice",
+    "cordova-android"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">300"
+      }
+    }
+  },
+  "homepage": "https://github.com/coloz/cordova-plugin-myservice#readme"
+}

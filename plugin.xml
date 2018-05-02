@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin 
+  xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-myservice" version="1.0.0">
+  <name>Cordova myservice</name>
+  <description>Cordova My Service plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,console</keywords>
+  <repo>https://github.com/coloz/cordova-plugin-myservice.git</repo>
+  <js-module name="myservice" src="www/myservice.js">
+    <clobbers target="MyService"/>
+  </js-module>
+  <platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <service android:name="com.coloz.myservice.MyService" android:exported="false" />
+    </config-file>
+    <source-file src="src/android/MyService.java" target-dir="src/com/coloz/myservice/" />
+  </platform>
+</plugin>
